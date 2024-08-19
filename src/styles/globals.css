@@ -1,0 +1,185 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+.min-h-screen {
+    background-image: url("/images/stars-background.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+body {
+    font-family: "Audiowide", sans-serif;
+    background-color: #000000;
+    color: #ffe81f !important; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffe81f !important;
+}
+
+a {
+    color: #00bfff;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #ffe81f !important;
+}
+
+button {
+    background-color: #ffe81f !important;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+input, select {
+    color: #ffe81f !important;
+    border-color: #ffe81f !important;
+}
+
+input::placeholder {
+    color: #ffe81f !important;
+}
+
+.grid {
+    scroll-behavior: smooth;
+    overscroll-behavior-y: contain;
+}
+
+.grid::-webkit-scrollbar {
+    width: 10px;
+}
+
+.grid::-webkit-scrollbar-thumb {
+    background-color: #ffe81f !important;
+    border-radius: 5px;
+}
+
+.grid::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+.card {
+    border-color: #ffe81f !important;
+}
+
+.card .text-yellow-500 {
+    color: #ffe81f !important;
+}
+
+.star-wars-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.star-wars-logo img {
+    width: 80%;
+    max-width: 500px;
+    animation: logoPulse 3s infinite ease-in-out, fadeIn 3s ease-in-out;
+}
+
+@keyframes logoPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.back-button {
+    display: flex;
+    align-items: center;
+    background-color: #282828; 
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem 1rem; 
+    border-radius: 2rem;
+    border: 2px solid #ffe81f;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 0 10px #ffe81f, 0 0 20px #ffe81f;
+    font-size: 0.875rem; 
+}
+
+.back-button:hover {
+    background-color: #ffe81f;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.back-button span {
+    margin-left: 0.5rem;
+}
+
+.details-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #ffe81f;
+}
+
+.details-container img {
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px #ffe81f;
+}
+
+.details-heading {
+    color: #ffe81f;
+}
+
+.details-description {
+    color: #ffe81f;
+    font-size: 1.25rem; 
+    margin-bottom: 1.5rem;
+    font-weight: bold; 
+    background: #2a2a2a; 
+    padding: 1rem; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 0 10px #ffe81f;
+}
+
+.films-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.film-item {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #2a2a2a; 
+    color: #ffe81f; 
+    border-radius: 0.5rem; 
+    font-size: 1rem;
+    box-shadow: 0 0 10px #ffe81f;
+}

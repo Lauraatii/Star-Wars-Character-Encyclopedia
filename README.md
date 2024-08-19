@@ -1,8 +1,37 @@
+Star Wars Character Encyclopedia
+
+Welcome to the Star Wars Character Encyclopedia! This web application allows you to explore detailed information about characters from the Star Wars universe, powered by the SWAPI GraphQL API.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+Make sure you have Node.js version 18.17.0 or higher installed on your machine. If you're using an older version, you'll need to update it.
+
+If you're using nvm to manage Node versions, you can switch to the correct version with the following command:
+
+```bash
+nvm use 18.17.0
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/star-wars-character-encyclopedia.git
+
+2. Navigate to the project directory:
+
+```bash
+cd star-wars-character-encyclopedia
+
+3. Install the dependencies:
+
+```bash
+npm install
+
+
+## Run the development server:
 
 ```bash
 npm run dev
@@ -16,7 +45,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
+
+Character List: View a list of Star Wars characters with search and sort functionality.
+Character Details: Click on a character to see detailed information, including species, homeworld, and films they appeared in.
+Mobile-First Design: The app is designed to be fully responsive, with a focus on mobile usability.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
